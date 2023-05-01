@@ -1,0 +1,27 @@
+{
+	"name": "ultrakill_server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"dev:updateCheck": "check-outdated",
+		"dev:run": "nodemon --watch './**/*.ts' index.ts",
+		"pack": "webpack",
+		"build": "tsc --build",
+		"_clean": "tsc --build --clean"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^18.16.3",
+		"check-outdated": "^2.11.0",
+		"nodemon": "^2.0.22",
+		"ts-loader": "^9.4.2",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.0.4",
+		"webpack": "^5.81.0",
+		"webpack-cli": "^5.0.2",
+		"webpack-node-externals": "^3.0.0"
+	}
+}
